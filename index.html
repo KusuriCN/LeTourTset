@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Le Tour</title>
+  </head>
+  <body data-spy="scroll" data-target="#navigation" data-offset="0">
+        <header>
+                <!--- Start navigation -->
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navigation">
+                  <!-- <img src="img/logo.png" height="30rem"> -->
+                    <a class="navbar-brand" href="index.html">LeTour</a>
+                    <!--- Start collapse button -->
+                    <button class="navbar-toggler btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <!--- Start collapse button -->
+                    <!--- Start collapse -->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">首页</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#infomation">信息</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hotels">酒店</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#special">特色</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--- ENd collapse-->
+
+                    </nav>
+                    <!--- End navigation -->
+            </header>
+            <!--- End navigation-->
+
+
+
+            <!--- Start Home -->
+            <div class="offset" id="home">
+                <!--- Start Slider -->
+                <div id="carouselMain" class="carousel slide" data-ride="carousel">
+                    <!--- Start Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselMain" data-slide-to="1"></li>
+                        <li data-target="#carouselMain" data-slide-to="2"></li>
+                        </ol>
+                        <!--- End Indicators -->
+                    <!--- Start Slide -->
+                    <div class="carousel-inner">
+                        <div class="top-img carousel-item active data-interval='3000' ">
+                        <img src="img/top1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="top-img carousel-item data-interval='3000' ">
+                        <img src="img/top2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="top-img carousel-item data-interval='3000' ">
+                        <img src="img/top3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <!--- End Slide -->
+                    <!--- Start Control -->
+                    <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                    <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    <!--- End Control -->
+                    </div>
+                    <!--- End Slider -->
+                </div>
+                <!--- End Home -->
+                <!--- Start Booking -->
+                <div class="offset" id="booking">
+                    <div class="container">
+                        <form action="book.php" method="POST">
+                            <div class="form-group row">
+                                <!-- booking-hotel -->
+                                <label for="hotel-selector align-middle">酒店</label>
+                                <select name="hotel" id="hotel-selector" class="form-control col-sm-3">
+                                    <option value='0'>秋葉原</option>
+                                    <option value='1'>鶯谷</option>
+                                </select>
+
+                                <!-- booking-roomstyle -->
+                                <label for="roomstyle-selector align-middle">房型</label>
+                                <select name="roomstyle" id="roomstyle-selector" class="form-control col-sm-5">
+                                    <option value='0'>商务双床</option>
+                                    <option value='1'>商务大床</option>
+                                    <option value='2'>公寓式标准双人</option>
+                                    <option value='3'>公寓式双人/双床可加床最多3位成人</option>
+                                    <option value='4'>公寓式双床最多4位成人2个大床</option>
+                                </select>
+                                </div>
+
+
+
+
+
+                            <div class="form-group row" id="flex-pc">
+
+                                <!-- booking-date -->
+                                <label for="date-text" id="date-text-label">入住日期</label>
+                                <lable name="date" id="date-text" class="form-control col-calendar"></lable>
+                                <input name="date" type="hidden" id="date-hidden" value=""/>
+                                <div id="datepicker"></div>
+
+                                <!-- booking-stay -->
+                                <select name="stay" id="stay-selector" class="form-control col-num sm-mgl">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">13</option>
+                                    </select>
+                                    <label for="stay-selector" id="stay-selector-label">晚</label>
+
+
+                                <!-- booking-room -->
+                                <select name="room" id="room-selector" class="form-control col-num sm-mgl">
+                                    <option value="1">1</option>
+                                </select>
+                                <label for="romm-selector" id="room-selector-label">间</label>
+
+                                <!-- booking-adult -->
+                                <label for="adult-selector" id="adult-selector-label-1">成人</label>
+                                <select name="adult" id="adult-selector" class="form-control col-num">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                <label for="adult-selector" id="adult-selector-label-2">人</label>
+
+
+                                <!-- booking-children -->
+                                <label for="children-selector" id="children-selector-lable-1">儿童</label>
+                                <select name="children" id="children-selector" class="form-control col-num">
+                                    <option value="0">0</option>
+                                </select>
+                                <label for="children-selector" id="children-selector-lable-2">人</label>
+
+                            </div>
+
+
+
+                            <!-- booking-email -->
+                            <div class="form-group row">
+                            <label for="children-selector">Email</label>
+                            <input type="text" id="email-text" name='email' class="form-control col-md-5">
+                            </div>
+
+                            <!-- booking-button -->
+                            <input id="booing-button" type="submit" value="预定" class="btn btn-bd-submit col-md-5">
+                            </form>
+                        </div>
+                    </div>
+                    <!--- End Booking -->
+            <!--- Start Information -->
+            <div class="offset" id="infomation">
+              <div class="container">
+                <div class="head"><h1><strong>消息动态</strong></h1><div class="under-line"></div></div>
+                <div class="line">
+                  <h6>2019.01.01</h6>
+                  <a href="#"><h6>10%OFF</h6></a>
+                </div>
+                <div class="line">
+                  <h6>2019.03.01</h6>
+                  <a href="#"><h6>浴衣租赁</h6></a>
+                </div>
+              </div>
+            </div>
+                <!--- End Infomation -->
+            <!--- Start Hotels -->
+            <div class="offset" id="hotels">
+              <div class="container">
+                <div class="head"><h1><strong>旗下酒店</strong></h1><div class="under-line"></div></div></div>
+
+                <!--- Start Slider -->
+                <div id="carouselHotels" class="carousel slide" data-ride="carousel">
+
+                    <!--- Start Slide -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="card mb-3" >
+                          <div class="row no-gutters">
+                            <div class="col-md-3 card-i">
+                              <img src="img/akihabara.jpg" style="height: 300px;" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">楽途秋葉原駅前店</h5>
+                                <p class="card-text">Set in Tokyo, 800 metres from Hulic Hall and Hulic Conference, LE TOUR HOTEL AKIHABARA EKIMAE features views of the city. This 4-star hotel offers a 24-hour front desk, a shared lounge and free WiFi. The property is non-smoking and is located 700 metres from Fujisoft Akiba Plaza. All units are equipped with air conditioning, a microwave, a fridge, a kettle, a bath, a hairdryer and a desk. At the hotel every room is fitted with a wardrobe, a flat-screen TV and a private bathroom. Popular points of interest near LE TOUR HOTEL AKIHABARA EKIMAE include Nikkei Hall, Akihabara Convention Hall and Convention Room AP Akihabara. The nearest airport is Tokyo Haneda International Airport, 28 km from the accommodation. 千代田区は「清潔さ」「文化」「街歩き」に興味がある人におすすめ。 あなたの言語でサポート！</p>
+                                <p class="card-text"><a href="akihabara.html" class="btn btn-success">了解详情</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card md-3">
+                          <div class="row no-gutters">
+                            <div class="col-md-3 card-i">
+                              <img src="img/ueno.jpg" style="height: 300px;" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">楽途上野</h5>
+                                <p class="card-text">ル トゥール ハウス 上野 アパートメントはJR鶯谷i駅北口から徒歩1分、上野駅から電車で4分の場所に位置しています。 ユニットには設備の整ったキッチン、ダイニングルーム、バルコニー、専用バスルームがあります。 一部のお部屋は畳敷きで、布団が備わります。 上野公園まで徒歩10分、東京国立博物館、東京都美術館まで徒歩15分、ショッピング街のアメヤ横丁まで電車で10分です。 台東区は「寺院」「市内観光」「街歩き」に興味がある人におすすめ。 この宿泊施設は東京で最高のロケーションと評判！この都市にある他の宿泊施設と比べて立地条件抜群です。 この宿泊施設は東京で最もおトクと評判！この都市にある他の宿泊施設と比べてコスパ抜群です。 あなたの言語でサポート！</p>
+                                <p class="card-text"><a href="ueno1.html" class="btn btn-success">了解详情</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card mb-3">
+                          <div class="row no-gutters">
+                            <div class="col-md-3 card-i">
+                              <img src="img/sagamihara.jpg" style="height: 300px;" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">楽途相模湖</h5>
+                                <p class="card-text">観光ホテル ラトゥアは相模原市にある4つ星のホテルで、相模川ふれあい科学館 アクアリウムさがみはらから25kmです。エクスプレスチェックイン＆チェックアウト、無料Wi-Fi、共用ラウンジ、エアコンと専用バスルーム付きのお部屋、レストランを提供しています。相模原麻溝公園競技場まで33kmです。 お部屋には薄型衛星テレビ、ポット、ホットタブ、無料バスアメニティ、デスク、冷蔵庫が備わります。 ビュッフェ式朝食、和朝食を毎朝用意しています。 観光ホテル ラトゥアの周辺エリアでは、ハイキングなどのアクティビティを楽しめます。 フロントでは観光情報を案内しています。 最寄りの羽田空港まで85kmです。 あなたの言語でサポート！</p>
+                                <p class="card-text"><a href="#" class="btn btn-success">了解详情</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselHotels" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselHotels" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                        </div>
+                        <!--- End Slide -->
+
+                </div>
+
+                </div>
+                </div>
+
+
+                <!--- End Hotels -->
+
+            <!--- Start Special -->
+            <div class="offset" id="special">
+              <div class="container">
+                <div class="head"><h1><strong>酒店特色</strong></h1><div class="under-line"></div></div>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div class="special-group">
+                    <div class="special" style="width: 20em">
+                      <img src="img/special1.jpg" class="card-img-top" alt="#">
+                      <h5 class="card-title">常驻酒店</h5>
+                      <p class="card-text">Set in Tokyo, 800 metres from Hulic Hall and Hulic Conference, LE TOUR HOTEL AKIHABARA EKIMAE features views of the city.</p>
+                      <p class="card-text-hidden">Set in Tokyo, 800 metres from Hulic Hall and Hulic Conference, LE TOUR HOTEL AKIHABARA EKIMAE features views of the city. This 4-star hotel offers a 24-hour front desk, a shared lounge and free WiFi. The property is non-smoking and is located 700 metres from Fujisoft Akiba Plaza.
+
+All units are equipped with air conditioning, a microwave, a fridge, a kettle, a bath, a hairdryer and a desk. At the hotel every room is fitted with a wardrobe, a flat-screen TV and a private bathroom.
+
+Popular points of interest near LE TOUR HOTEL AKIHABARA EKIMAE include Nikkei Hall, Akihabara Convention Hall and Convention Room AP Akihabara. The nearest airport is Tokyo Haneda International Airport, 28 km from the accommodation.
+
+千代田区は「清潔さ」「文化」「街歩き」に興味がある人におすすめ。
+
+あなたの言語でサポート！</p>
+                      <p class="card-text"><a href="akihabara.html" class="btn btn-success card-text-button">了解详情</a></p>
+                    </div>
+                  </div>
+
+                  <div class="special-group">
+                    <div class="special" style="width: 20em">
+                      <img src="img/special2.jpg" class="card-img-top" alt="#">
+                      <h5 class="card-title">民宿</h5>
+                      <p class="card-text">ル トゥール ハウス 上野 アパートメントはJR鶯谷i駅北口から徒歩1分、上野駅から電車で4分の場所に位置しています。</p>
+                      <p class="card-text-hidden">ル トゥール ハウス 上野 アパートメントはJR鶯谷i駅北口から徒歩1分、上野駅から電車で4分の場所に位置しています。
+
+ユニットには設備の整ったキッチン、ダイニングルーム、バルコニー、専用バスルームがあります。
+
+一部のお部屋は畳敷きで、布団が備わります。
+
+上野公園まで徒歩10分、東京国立博物館、東京都美術館まで徒歩15分、ショッピング街のアメヤ横丁まで電車で10分です。
+
+台東区は「寺院」「市内観光」「街歩き」に興味がある人におすすめ。
+
+この宿泊施設は東京で最高のロケーションと評判！この都市にある他の宿泊施設と比べて立地条件抜群です。
+
+この宿泊施設は東京で最もおトクと評判！この都市にある他の宿泊施設と比べてコスパ抜群です。
+
+あなたの言語でサポート！</p>
+                      <p class="card-text"><a href="ueno1.html" class="btn btn-success">了解详情</a></p>
+                    </div>
+                  </div>
+
+                  <div class="special-group">
+                    <div class="special" style="width: 20em">
+                      <img src="img/special3.jpg" class="card-img-top" alt="#">
+                      <h5 class="card-title">观光酒店</h5>
+                      <p class="card-text">観光ホテル ラトゥアは相模原市にある4つ星のホテルで、相模川ふれあい科学館 アクアリウムさがみはらから25kmです。</p>
+                      <p class="card-text-hidden">エクスプレスチェックイン＆チェックアウト、無料Wi-Fi、共用ラウンジ、エアコンと専用バスルーム付きのお部屋、レストランを提供しています。相模原麻溝公園競技場まで33kmです。
+
+お部屋には薄型衛星テレビ、ポット、ホットタブ、無料バスアメニティ、デスク、冷蔵庫が備わります。
+
+ビュッフェ式朝食、和朝食を毎朝用意しています。
+
+観光ホテル ラトゥアの周辺エリアでは、ハイキングなどのアクティビティを楽しめます。
+
+フロントでは観光情報を案内しています。
+
+最寄りの羽田空港まで85kmです。
+
+あなたの言語でサポート！</p>
+                      <p class="card-text"><a href="#" class="btn btn-success">了解详情</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+                </div>
+            <!--- End Special -->
+
+        <!--- Start footer -->
+        <footer id="footer">
+          <div class="footer">
+            <div class="small"><small>&copy; Le Tour.</small></div>
+          </div>
+        </footer>
+        <!--- End footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/flex-mobile.js"></script>
+  </body>
+</html>

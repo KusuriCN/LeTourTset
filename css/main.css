@@ -1,0 +1,616 @@
+html,
+body {
+    height: 100%;
+    font-family: Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+}
+
+nav {
+    background-color: rgba(40, 167, 69, 0.8)!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .nav-item:hover .nav-link {
+    color: #ffe484;
+}
+
+.black {
+    background-color: green;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+
+    -webkit-mask: url(../img/chevron-circle-left-solid.svg) no-repeat 50% 50%;
+    mask: url(../img/chevron-circle-left-solid.svg) no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+form {
+
+    padding: 20px !important;
+
+    background-color: forestgreen;
+}
+
+@media (max-width: 768px) {
+    .sm-selector{
+        width: 25% !important;
+    }
+}
+
+ .sm-mgl {
+    margin-left: 12px;
+}
+
+.btn-bd-submit {
+/* font-weight: 600; */
+color: #ffe484;
+border-color: #ffe484;
+}
+
+.btn-bd-submit:hover,
+.btn-bd-submit:active {
+    color: #343a40;
+    background-color: #ffe484;
+    border-color: #ffe484;
+}
+
+.btn-bd-submit:focus {
+    box-shadow: 0 0 0 3px rgba(#ffe484, .25);
+}
+
+label {
+    line-height: 36px;
+    padding: 0 5px;
+}
+
+.form-control {
+    padding: 5px !important;
+}
+
+.col-num {
+
+    width: 4em;
+}
+
+.col-calendar {
+
+    width: 8em;
+}
+
+.flex-container-mobile,  .flex-container-mobile-s {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.head{
+  text-align: center;
+
+  margin-bottom: 25px;
+
+}
+
+.line{
+  padding-top: 20px;
+  border-bottom: solid 1px rgba(0, 128, 0, 0.3);
+}
+
+.special{
+  width: 20em;
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+  border: solid 1px rgba(0, 128, 0, 0.3);
+
+  border-radius: 10px;
+}
+
+
+
+.offset{
+  padding: 56px 0;
+}
+
+.small {
+  text-align: center;
+
+  line-height: 40px;
+
+  vertical-align: middle;
+}
+
+.footer {
+
+  color: white;
+  background-color: #006400;
+}
+
+#hotels{
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.carousel-item{
+  text-align: center;
+}
+
+.card-i{
+  margin: auto;
+
+}
+
+.top-img {
+  /* height: 576px; */
+}
+
+#home, #booking, #hotels{
+  background-color: #dad7d3;
+}
+
+#infomation, #special{
+  background-color: #d6ccbf;
+}
+
+.special {
+  background-color: white;
+}
+
+.card-title{
+  padding-top: 20px;
+
+}
+
+.under-line{
+  height: 3px;
+
+  width: 30px;
+
+  background-color: green;
+
+  margin: -top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-btn{
+  float: right;
+}
+
+.room-style{
+  padding: 20px 0;
+}
+.layout-roomstyle li:first-child{
+  list-style-type: none;
+  float: left;
+  width: 50%;
+  padding: 0 20px 0 0;
+}
+.layout-roomstyle li{
+  list-style-type: none;
+}
+.layout-roomstyle-img{
+  width: 100%;
+}
+.layout-description-head{
+  text-align: center;
+}
+
+.card-roomstyle {
+  margin: auto;
+}
+
+.count{
+  background-color: black;
+  -webkit-mask: url(../img/icon/user-solid.svg) no-repeat center;
+  mask: url(../img/icon/user-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.bed{
+  background-color: black;
+  -webkit-mask: url(../img/icon/bed-solid.svg) no-repeat center;
+  mask: url(../img/icon/bed-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.price {
+  background-color: black;
+  -webkit-mask: url(../img/icon/yen-sign-solid.svg) no-repeat center;
+  mask: url(../img/icon/yen-sign-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.notice {
+  background-color: gold;
+  -webkit-mask: url(../img/icon/exclamation-triangle-solid.svg) no-repeat center;
+  mask: url(../img/icon/exclamation-triangle-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+/* @media (min-width: 980px) {
+  .more-height{
+    height: 580px;
+  }
+} */
+
+.more-discription-left{
+  padding-top: 40px;
+}
+
+/* .more-right {
+  font-size: 1em;
+} */
+.w-50 {
+  padding : 10px;
+  margin-bottom: 15px;
+}
+
+.wifi{
+  background-color: black;
+  -webkit-mask: url(../img/icon/wifi-solid.svg) no-repeat center;
+  mask: url(../img/icon/wifi-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.tv{
+  background-color: black;
+  -webkit-mask: url(../img/icon/tv-solid.svg) no-repeat center;
+  mask: url(../img/icon/tv-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.food{
+  background-color: black;
+  -webkit-mask: url(../img/icon/utensils-solid.svg) no-repeat center;
+  mask: url(../img/icon/utensils-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.bath{
+  background-color: black;
+  -webkit-mask: url(../img/icon/bath-solid.svg) no-repeat center;
+  mask: url(../img/icon/bath-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.washer{
+  background-color: black;
+  -webkit-mask: url(../img/icon/washing-machine.svg) no-repeat center;
+  mask: url(../img/icon/washing-machine.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.airconditioner{
+  background-color: black;
+  -webkit-mask: url(../img/icon/air-conditioner.svg) no-repeat center;
+  mask: url(../img/icon/air-conditioner.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.handholdinghart{
+  background-color: black;
+  -webkit-mask: url(../img/icon/hand-holding-heart-solid.svg) no-repeat center;
+  mask: url(../img/icon/hand-holding-heart-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.no{
+  background-color: black;
+  -webkit-mask: url(../img/icon/times-circle-solid.svg) no-repeat center;
+  mask: url(../img/icontimes-circle-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.nosmoking{
+  background-color: black;
+  -webkit-mask: url(../img/icon/smoking-ban-solid.svg) no-repeat center;
+  mask: url(../img/smoking-ban-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.infoicon{
+  background-color: black;
+  -webkit-mask: url(../img/icon/info-circle-solid.svg) no-repeat center;
+  mask: url(../img/info-circle-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.plane{
+  background-color: black;
+  -webkit-mask: url(../img/icon/plane-solid.svg) no-repeat center;
+  mask: url(../img/plane-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.subway{
+  background-color: black;
+  -webkit-mask: url(../img/icon/subway-solid.svg) no-repeat center;
+  mask: url(../img/subway-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.spot{
+  background-color: black;
+  -webkit-mask: url(../img/icon/umbrella-beach-solid.svg) no-repeat center;
+  mask: url(../img/umbrella-beach-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.location{
+  background-color: black;
+  -webkit-mask: url(../img/icon/map-marker-alt-solid.svg) no-repeat center;
+  mask: url(../img/map-marker-alt-solid.svg) no-repeat center;
+  height: 24px;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.footlink {
+  color: #4169e1;
+}
+
+.footlink:hover {
+  color: gray;
+}
+
+.facebook{
+  background-color: white;
+  -webkit-mask: url(../img/icon/facebook-f-brands.svg) no-repeat center;
+  mask: url(../img/icon/facebook-f-brands.svg) no-repeat center;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.twitter{
+  background-color: white;
+  -webkit-mask: url(../img/icon/twitter-brands.svg) no-repeat center;
+  mask: url(../img/icon/twitter-brands.svg) no-repeat center;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.wechat{
+  background-color: white;
+  -webkit-mask: url(../img/icon/weixin-brands.svg) no-repeat center;
+  mask: url(../img/icon/weixin-brands.svg) no-repeat center;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.LINE{
+  background-color: white;
+  -webkit-mask: url(../img/icon/line-brands.svg) no-repeat center;
+  mask: url(../img/iconline-brands.svg) no-repeat center;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.QR div {
+  max-width: 200px !important;
+  padding: 10px !important;
+}
+
+.contact span{
+  margin-right: 18px;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+
+  -moz-box-orient:vertical;
+  -webkit-box-orient:vertical;
+  -o-box-orient:vertical;
+  -ms-box-orient:vertical;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.wrap{
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex-container li {
+
+  margin-right: 30px;
+  width: 7em;
+}
+
+
+.ironer{
+  background-color: black;
+  -webkit-mask: url(../img/icon/hot-ironer.svg) no-repeat center;
+  mask: url(../img/icon/hot-ironer.svg) no-repeat center;
+  height: 1.2em;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+
+.shower{
+  background-color: black;
+  -webkit-mask: url(../img/icon/shower-solid.svg) no-repeat center;
+  mask: url(../img/icon/shower-solid.svg) no-repeat center;
+  height: 1.2em;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.li-top{
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+
+.view{
+  background-color: black;
+  -webkit-mask: url(../img/icon/mountain-solid.svg) no-repeat center;
+  mask: url(../img/icon/mountain-solid.svg) no-repeat center;
+  height: 1.2em;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.parking{
+  background-color: black;
+  -webkit-mask: url(../img/icon/parking-solid.svg) no-repeat center;
+  mask: url(../img/icon/parking-solid.svg) no-repeat center;
+  height: 1.4em;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.box{
+  margin: 120px 60px 0 60px;
+  border: solid 1px green;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.box p, li{
+    line-height: 1.5em;
+}
+
+.button-wrapper{
+   text-align:center;
+   padding : 20px 0;
+}
+
+.button-wrapper button {
+  min-width: 300px;
+
+}
+
+.checkbox-wrapper{
+  margin: 0 60px;
+}
+
+ .msg-wrapper {
+   margin: 0 60px;
+   background-color: #dc3545;
+ }
+
+ .msg-wrapper label {
+    line-height:1.5em;
+    margin-top: .5rem;
+    display: none;
+ }
+
+.card-text-hidden{
+  display: none;
+}
+
+.card-text-button{
+  
+}
